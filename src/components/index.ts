@@ -1,4 +1,6 @@
+export * from "./ui";
+
 export * from "./Header";
 export * from "./NavBar";
-export * from "./ui/button";
-export * from "./ui/select";
+export * from "./News";
+export * from "./RecentNews";
