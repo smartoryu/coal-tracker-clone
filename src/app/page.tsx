@@ -1,4 +1,4 @@
-import { Header, Introduction, RecentNews } from "@/components";
+import { Header, Introduction, MapPanel, RecentNews } from "@/components";
 import { INews } from "@/interfaces";
 
 export default function Home() {
@@ -9,6 +9,12 @@ export default function Home() {
       <section className="p-14 pt-6 relative flex w-full justify-evenly divide-x divide-[#BBB]">
         <div className="w-[80%]">
           <Introduction />
+          <div className="flex mt-5">
+            <div className="w-[25%]"></div>
+            <div className="w-[75%]">
+              <MapPanel />
+            </div>
+          </div>
         </div>
         <div className="w-[20%]">
           <RecentNews data={news} />
