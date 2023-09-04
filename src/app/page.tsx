@@ -1,4 +1,5 @@
 import { Header, Introduction, MapPanel, RecentNews } from "@/components";
+import { GlobalCoalPlants } from "@/components/charts";
 import { INews } from "@/interfaces";
 
 export default function Home() {
@@ -11,8 +12,9 @@ export default function Home() {
           <Introduction />
           <div className="flex mt-5">
             <div className="w-[25%]"></div>
-            <div className="w-[75%]">
+            <div className="w-[75%] ml-2 pl-4">
               <MapPanel />
+              <GlobalCoalPlants />
             </div>
           </div>
         </div>

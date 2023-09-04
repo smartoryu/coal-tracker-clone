@@ -1,4 +1,5 @@
-import { Mapbox, Tabs, TabsContent, TabsList, TabsTrigger } from "@/components";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui";
+import { Mapbox } from "./Mapbox";
 
 export function MapPanel() {
   const tab = [
@@ -8,7 +9,7 @@ export function MapPanel() {
   ];
 
   return (
-    <div className="px-8">
+    <div className="pr-8">
       <Tabs defaultValue="1" className="w-full">
         <TabsList className="grid w-full grid-cols-3">
           {tab.map((e) => (
