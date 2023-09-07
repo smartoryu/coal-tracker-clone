@@ -6,7 +6,7 @@ import {
   NetChangeInAYear,
   RecentNews,
 } from "@/components";
-import { GlobalCoalPlants } from "@/components/charts";
+import { GlobalCoalPlants, GlobalEmissionPathways } from "@/components/charts";
 import { INews } from "@/interfaces";
 
 export default function Home() {
@@ -35,6 +35,7 @@ export default function Home() {
             <div className="w-[75%] ml-2 pl-4">
               <MapPanel />
               <GlobalCoalPlants />
+              <GlobalEmissionPathways />
             </div>
           </div>
         </div>

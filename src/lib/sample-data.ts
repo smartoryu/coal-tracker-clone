@@ -747,6 +747,79 @@ export const coal_plants_by_status: { [key: string]: number } = {
   retired: 474,
 };
 
+export interface IEmissionPathway {
+  current: number;
+  no_action: number;
+  target_1_5_deg: number;
+  target_2_deg: number;
+  year: number;
+}
+export const EmissionPathways: IEmissionPathway[] = [
+  {
+    year: 2010,
+    current: 8.9,
+    no_action: 8.9,
+    target_1_5_deg: 8.9,
+    target_2_deg: 8.9,
+  },
+  {
+    year: 2015,
+    current: 9.6,
+    no_action: 9.6,
+    target_1_5_deg: 9.6,
+    target_2_deg: 9.6,
+  },
+  {
+    year: 2020,
+    current: 9.5,
+    no_action: 11.2,
+    target_1_5_deg: 9.5,
+    target_2_deg: 9.5,
+  },
+  {
+    year: 2025,
+    current: 10,
+    no_action: 12.1,
+    target_1_5_deg: 6.2,
+    target_2_deg: 9.1,
+  },
+  {
+    year: 2030,
+    current: 10,
+    no_action: 13.2,
+    target_1_5_deg: 3,
+    target_2_deg: 7.8,
+  },
+  {
+    year: 2035,
+    current: 10.1,
+    no_action: 14.1,
+    target_1_5_deg: 1,
+    target_2_deg: 6.2,
+  },
+  {
+    year: 2040,
+    current: 10.1,
+    no_action: 14.9,
+    target_1_5_deg: 0.3,
+    target_2_deg: 4,
+  },
+  {
+    year: 2045,
+    current: 10.1,
+    no_action: 15.6,
+    target_1_5_deg: 0.1,
+    target_2_deg: 1.7,
+  },
+  {
+    year: 2050,
+    current: 10.2,
+    no_action: 16.4,
+    target_1_5_deg: 0,
+    target_2_deg: 0.6,
+  },
+];
+
 export const country_rankings_by_status = {
   operational: [
     {
