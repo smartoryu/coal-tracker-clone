@@ -5,7 +5,7 @@ import { MapRef } from 'react-map-gl'
 
 import { Map } from '@/components/map'
 import { Sheet } from '@/components/sheet'
-import { cn } from '@/libraries/utils'
+import { cn } from "@/lib/utils";
 
 export default function MapsPage() {
   const [open, setOpen] = useState(false)
